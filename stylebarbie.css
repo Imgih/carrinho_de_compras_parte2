@@ -1,0 +1,319 @@
+.bg{
+        background-color: white;
+        width: auto;
+        color: white;
+        height: 600px;
+        margin: 20px auto;
+        padding-left:350px;
+        padding-top:30px;
+        text-align: center;
+    
+    }
+    
+    *{
+            padding: 0;
+            margin:  0;
+            box-sizing: border-box;
+            text-align: center;
+            
+        }
+        
+    .container{
+            width: 70px;
+            height: 70px;
+       
+        }
+        
+    .box{
+            width: 800px;
+            position: absolute;
+            left: 60%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            padding: 40px 40px;
+            box-shadow: 0 0 15px rgb(200,200,200);
+        }
+    p{
+            text-align: justify;
+            text-indent: 70px;
+        }
+        h2 {
+            font-size: 2rem;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        h2::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            white-space: nowrap;
+            color: #ec9ac5;
+            transition: width 0.5s ease;
+            overflow: hidden;
+        }
+        
+        h2:hover::before {
+            width: 100%;
+        }
+        
+    
+    
+    .checked {
+            color: rgb(255, 255, 255);
+            text-align: center;
+          }
+    .star-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500vh;
+            margin: 0;
+          }
+      
+    .fa-star {
+            font-size: 30px;
+            color: gold;
+            transition: transform 0.3s ease-in-out;
+          }
+      
+    .fa-star:hover {
+            transform: scale(1.2);
+          }
+          
+          
+    
+
+
+    .wrapper {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 80rem;
+        }
+
+    .cols {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+    .col {
+            width: calc(25% - 2rem);
+            margin: 1rem;
+            cursor: pointer;
+
+        }
+
+    .containercard {
+            -webkit-perspective: 1000px;
+            width: 250px;
+            height: 350px;
+            margin: 10px;
+            perspective: 1000px;
+            position: absolute;
+            top: 45%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+        }
+        
+        
+        
+        
+       
+
+    .front,
+    .back {
+            background-size: cover;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            background-position: center;
+            -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            text-align: center;
+            min-height: 350px;
+            box-shadow: 0 0 10px solid blue;
+
+            height: auto;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 1.5rem;
+            background-image: url('img/barrbie.jpg');
+        }
+
+    .back {
+            background: #cedce7;
+            background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+            background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+            background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+            background-image: url('img/posterb.jpg.jpg');
+        }
+
+    .front:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            content: '';
+            display: block;
+            opacity: .6;
+            background-color: #000;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+  
+    .containercard:hover .front,
+    .containercard:hover .back {
+            -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        }
+
+    .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+    .inner {
+            -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+            top: 50%;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            outline: 1px solid transparent;
+            -webkit-perspective: inherit;
+            perspective: inherit;
+            z-index: 2;
+        }
+
+    .containercard .back {
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+        }
+
+    .containercard .front {
+            -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+    .containercard:hover .back {
+            -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+    .containercard:hover .front {
+            -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+    .front .inner p {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+    .front .inner p:after {
+            content: '';
+            width: 4rem;
+            height: 2px;
+            position: absolute;
+            background: 'img/eitanois.jpg';
+            display: block;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: -.75rem;
+        }
+
+     .front .inner span {
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Montserrat';
+            font-weight: 300;
+        }
+
+    .back .inner {
+        -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+        transform: translateY(-50%) translateZ(60px) scale(0.94);
+        top: 50%;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: 1px solid transparent;
+        -webkit-perspective: inherit;
+        perspective: inherit;
+        z-index: 2;
+    }
+
+    /* Add styles for the new image container */
+    .back .inner .image-container {
+        background-size: cover;
+        border-radius: 10px;
+        height: 100%;
+        background-position: center;
+    }
+
+    
+    #image1 {
+    background-size: cover;
+    background-position: center;
+    }
+
+    #image2 {
+        background-size: cover;
+        background-position: center;
+        }
+    
+
+ @media screen and (max-width: 64rem) {
+            .col {
+                width: calc(33.333333% - 2rem);
+            }
+        }
+ @media screen and (max-width: 48rem) {
+            .col {
+                width: calc(50% - 2rem);
+            }
+        }
+
+@media screen and (max-width: 32rem) {
+            .col {
+                width: 100%;
+                margin: 0 0 2rem 0;
+            }
+        }
